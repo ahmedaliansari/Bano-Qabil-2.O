@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed - Form</title>
+</head>
+
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background-color: #f4f4f4;">
+
+    <div style="width: 400px; margin: 30px; border: 1px solid #ccc; border-top: 5px solid #3498db; background-color: #fff;
+    padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
+        <h2 style="text-align: center; color: #3498db; margin-bottom: 20px;">Create Your Account</h2>
+        <h4 style="color: #333;">* Required Information</h4>
+
+        <h3 style="background-color: #3498db; padding: 10px; margin-top: 20px; color: #fff;">Basic Information</h3>
+        <div style="display: flex; flex-direction: column; padding: 10px;">
+
+            <label for="email" style="margin-top: 10px; color: #333;">Email *</label>
+            <input type="email" id="email" required style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px;
+            border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="password" style="margin-top: 10px; color: #333;">Password *</label>
+            <input type="password" id="password" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="retypePassword" style="margin-top: 10px; color: #333;">Retype Password *</label>
+            <input type="password" id="retypePassword" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="firstName" style="margin-top: 10px; color: #333;">First Name *</label>
+            <input type="text" id="firstName" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="lastName" style="margin-top: 10px; color: #333;">Last Name *</label>
+            <input type="text" id="lastName" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="phoneNumber" style="margin-top: 10px; color: #333;">Phone Number *</label>
+            <input type="tel" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="999-999-999" required
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc;
+                border-radius: 4px; box-sizing: border-box;">
+
+            <label for="address" style="margin-top: 10px; color: #333;">Address *</label>
+            <input type="text" id="address" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="city" style="margin-top: 10px; color: #333;">City *</label>
+            <input type="text" id="city" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="province" style="margin-top: 10px; color: #333;">Province *</label>
+            <select id="province" required
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc;
+                border-radius: 4px; box-sizing: border-box;">
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Kashmir">Kashmir</option>
+            </select>
+
+            <label for="country" style="margin-top: 10px; color: #333;">Country *</label>
+            <input type="text" id="country" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+
+        <h3 style="background-color: #3498db; padding: 10px; margin-top: 20px; color: #fff;">Education</h3>
+        <div style="display: flex; flex-direction: column; padding: 10px;">
+
+            <label for="school" style="margin-top: 10px; color: #333;">School *</label>
+            <input type="text" id="school" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="program" style="margin-top: 10px; color: #333;">Program *</label>
+            <input type="text" id="program" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="educationLevel" style="margin-top: 10px; color: #333;">Education Level *</label>
+            <select id="educationLevel" required
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc;
+                border-radius: 4px; box-sizing: border-box;">
+                <option value="" disabled selected>- Select -</option>
+                <option value="Graduated">Graduated</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="DidNotGraduate">Did Not Graduate</option>
+            </select>
+
+            <label for="graduationDate" style="margin-top: 10px; color: #333;">Graduation Date *</label>
+            <input type="date" id="graduationDate" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+
+        <h3 style="background-color: #3498db; padding: 10px; margin-top: 20px; color: #fff;">Work Experience</h3>
+        <div style="display: flex; flex-direction: column; padding: 10px;">
+
+            <label for="employer" style="margin-top: 10px; color: #333;">Employer *</label>
+            <input type="text" id="employer" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="jobTitle" style="margin-top: 10px; color: #333;">Job Title *</label>
+            <input type="text" id="jobTitle" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+
+            <label for="jobDuty" style="margin-top: 10px; color: #333;">Job Duty *</label>
+            <textarea id="jobDuty" rows="4" required
+                style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc;
+                border-radius: 4px; box-sizing: border-box;"></textarea>
+
+            <label for="workedYear" style="margin-top: 10px; color: #333;">Worked Year *</label>
+            <input type="number" id="workedYear" min="2000" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+
+        <h3 style="background-color: #3498db; padding: 10px; margin-top: 20px; color: #fff;">Attachments</h3>
+        <div style="display: flex; flex-direction: column; padding: 10px;">
+
+            <label for="attachments" style="margin-top: 10px; color: #333;">Attachments:</label>
+            <input type="file" id="attachments" required style="width: 100%; padding: 8px; margin-top: 5px;
+            margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+
+        <div style="display: flex; flex-direction: column; padding: 10px;">
+            <button type="reset" style="background-color: #ccc; color: #333; padding: 8px; border: none;
+            border-radius: 4px; cursor: pointer;">Reset</button>
+            <button type="submit" style="background-color: #3498db; color: #fff; padding: 8px; border: none;
+            border-radius: 4px; cursor: pointer;">Apply</button>
+        </div>
+    </div>
+</body>
+
+</html>
