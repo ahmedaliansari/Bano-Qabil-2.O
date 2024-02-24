@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    overflow-x: hidden;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 2rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+:root {
+    --color-primary: #c69963;
+    --color-primary-dark: rgb(178, 133, 81);
+    --color-secondary: rgb(16, 29, 44);
+    --color-grey-light-1: rgb(249, 247, 246);
+    --color-grey-light-2: #aaa;
+    --color-grey-dark-1: #54483a;
+    --color-grey-dark-2: #6d5d4b;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 110rem;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.clr {
+    clear: both;
+}
+
+.bg-dark {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.bg-light {
+    background: var(--color-grey-light-1);
+    color: var(--color-secondary);
+}
+
+.bg-light1 {
+    background: var(--color-grey-light-2);
+    color: var(--color-secondary);
+}
+
+.bg-primary {
+    background: var(--color-primary-dark);
+    color: var(--color-secondary);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #fff;
+    background: var(--color-secondary);
+    padding: 1.7rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: fill 300ms ease-in-out;
+}
+
+.btn:hover {
+    background: var(--color-primary-dark);
+    color: #fff;
+}
+
+.btn-light {
+    background: var(--color-grey-light-1);
+    color: var(--color-secondary);
+}
+
+
+.py-1 {
+    padding: 2rem 0;
+}
+
+.py-2 {
+    padding: 3rem 0;
+}
+
+.py-3 {
+    padding: 4rem 0;
+}
+
+.py-4 {
+    padding: 5rem 0;
+}
+
+.py-5 {
+    padding: 6rem 0;
+}
+
+.py-6 {
+    padding: 7rem 0;
+}
+
+.py-7 {
+    padding: 8rem 0;
+}
+
+.py-8 {
+    padding: 9rem 0;
+}
+
+.py-9 {
+    padding: 10rem 0;
+}
+
+.py-10 {
+    padding: 11rem 0;
+}
+
+
+.navbar {
+    background: var(--color-secondary);
+    color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10000px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar h1 {
+    float: left;
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-left: 2rem;
+}
+
+.navbar h1 a:hover {
+    color: var(--color-primary-dark);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.navbar ul li a:hover,
+.navbar a.current {
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+/* SHOWCASE */
+
+.showcase {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(16, 29, 44, 0.83),
+     rgba(178, 133, 81, 0.8)), url('./image/holiday-hotel-las-vegas-6534.jpg')
+      no-repeat center center/cover;
+    background-size: 100% 100%, cover;
+}
+
+.showcase .showcase-content {
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33rem;
+}
+
+.showcase .showcase-content h1 {
+    font-size: 6rem;
+    line-height: 1.2em;
+}
+
+.showcase .showcase-content h1 span {
+    color: var(--color-primary-dark);
+}
+
+.showcase .showcase-content p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-bottom: 3.6rem;
+}
+
+/* HOMEINFO */
+
+#home-info {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#home-info .info-img {
+    width: 50%;
+    background: linear-gradient(rgba(16, 29, 44, 0.3), rgba(16, 29, 44, 0.83)), url('./image/hotel-light-low-angle-shot-96444.jpg') no-repeat;
+    background-size: 100% 100%, cover;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 25rem 15rem;
+}
+
+#home-info .info-content h2 {
+    font-size: 8rem;
+    line-height: 9rem;
+}
+
+#home-info .info-content p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    padding-bottom: 5rem;
+}
+
+#home-info .info-content span {
+    color: var(--color-primary-dark);
+}
+
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.box {
+    width: 33.3%;
+    padding: 7rem;
+    text-align: center;
+}
+
+.box h3 {
+    font-size: 6rem;
+    line-height: 5rem;
+}
+
+.box p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 7rem 0;
+}
+
+.box i {
+    padding-bottom: 5rem;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 6vw);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.pic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.pic1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background: url("./image/test-bg.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic2 {
+    grid-column: 3 / span 3;
+    grid-row: 1 / span 3;
+    background: url("./image/apartment-architecture-cafeteria-827528.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic3 {
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 2;
+    background: url("./image/apartment-bath-bathroom-1457847.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic4 {
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 2;
+    background: url("./image/architecture-blue-water-buildings-261102.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic5 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 3;
+    background: url("./image/architecture-boat-building-1697076.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic6 {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 2;
+    background: url("./image/architecture-building-design-1704639.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic7 {
+    grid-column: 5 / span 1;
+    grid-row: 4 / span 1;
+    background: url("./image/architecture-building-dubai-70441.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic8 {
+    grid-column: 6 / span 2;
+    grid-row: 3 / span 2;
+    background: url("./image/architecture-clean-hall-53464.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic9 {
+    grid-column: 8 / span 1;
+    grid-row: 3 / span 3;
+    background: url("./image/bed-bedroom-cushion-372225.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic10 {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 2;
+    background: url("./image/dug-out-pool-hotel-poolside-1134176.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic11 {
+    grid-column: 2 / span 2;
+    grid-row: 6 / span 2;
+    background: url("./image/holiday-hotel-las-vegas-6534.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic12 {
+    grid-column: 4 / span 1;
+    grid-row: 6 / span 2;
+    background: url("./image/hotel-light-low-angle-shot-96444.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic13 {
+    grid-column: 5 / span 3;
+    grid-row: 5 / span 3;
+    background: url("./image/photo-1.jpg");
+    background-size: 100% 100%, cover;
+}
+
+.pic14 {
+    grid-column: 8 / span 1;
+    grid-row: 6 / span 2;
+    background: url("./image/photo-2.jpg");
+    background-size: 100% 100%, cover;
+}
