@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+
+    <link rel="stylesheet" href="./asset/style.css" />
+
+    <title>AdminHub</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+   <!-- Sidebar with separate content sections -->
+<section id="sidebar">
+  <a href="#" class="brand">
+    <i class="bx bxs-smile"></i>
+    <span class="text">AdminHub</span>
+  </a>
+
+  <ul class="side-menu top">
+     <li>
+    <a href="#" onclick="showContent('homeContent')">
+      <i class="bx bx-home"></i>
+      <span class="text">Home</span>
+    </a>
+  </li>
+
+    <li>
+      <a href="#" onclick="showContent('teachersContent')">
+        <i class="bx bxs-shopping-bag-alt"></i>
+        <span class="text">Our Teachers</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="showContent('studentsContent')">
+        <i class="bx bxs-doughnut-chart"></i>
+        <span class="text">Our Students</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="showContent('coursesContent')">
+        <i class="bx bxs-message-dots"></i>
+        <span class="text">Our Courses</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="showContent('teamMembersContent')">
+        <i class="bx bxs-group"></i>
+        <span class="text">Our Team Members</span>
+      </a>
+    </li>
+  </ul>
+  <ul class="side-menu">
+    <li>
+      <a href="#" onclick="showContent('settingsContent')">
+        <i class="bx bxs-cog"></i>
+        <span class="text">Settings</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="logout-link logout">
+        <i class="bx bxs-log-out-circle"></i>
+        <span class="text">Logout</span>
+      </a>
+    </li>
+  </ul>
+</section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <a href="#" class="nav-link">Categories</a>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <input type="checkbox" id="switch-mode" hidden />
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+          <i class="bx bxs-bell"></i>
+          <span class="num">8</span>
+        </a>
+
+        <a href="#" class="profile">
+          <p id="usernameDisplay"></p>
+        </a>
+      </nav>
+      <!-- NAVBAR -->
+
+     
+
+
+<section id="mainContent">
+  <!-- Content containers for each section -->
+  <div id="homeContent">
+    <!-- MAIN -->
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <p id="usernameDisplay"></p>
+
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-calendar-check"></i>
+            <span class="text">
+              <h3>1020</h3>
+              <p>Total Teachers</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>2834</h3>
+              <p>Total Students</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Courses</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Total Sales</p>
+            </span>
+          </li>
+        </ul>
+
+       
+      </main>
+      <!-- MAIN -->
+    
+  </div>
+
+
+
+  <div id="teachersContent" style="display: none;">
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <p id="usernameDisplay"></p>
+
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Our Teachers</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-calendar-check"></i>
+            <span class="text">
+              <h3>1020</h3>
+              <p>Total Teachers</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>2834</h3>
+              <p>Total Students</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Courses</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Total Sales</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Recent Orders</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            
+          </div>
+        </div>
+      </main>
+  
+    <!-- Content specific to teachers -->
+  </div>
+
+
+
+  <div id="studentsContent" style="display: none;">
+    <main>
+        <div class="head-title">
+          <div class="left">
+            <p id="usernameDisplay"></p>
+
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Our Students</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-calendar-check"></i>
+            <span class="text">
+              <h3>1020</h3>
+              <p>Total Teachers</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>2834</h3>
+              <p>Total Students</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Courses</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Total Sales</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>All Students</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+
+              
+            </div>
+          <table id="userTable">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                  </tr>
+                </thead>
+                <tbody id="userTableBody">
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+        
+      </main>
+    <!-- Content specific to students -->
+  </div>
+
+
+
+  <div id="coursesContent" style="display: none;">
+     <main>
+        <div class="head-title">
+          <div class="left">
+            <p id="usernameDisplay"></p>
+
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Our Courses</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-calendar-check"></i>
+            <span class="text">
+              <h3>1020</h3>
+              <p>Total Teachers</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>2834</h3>
+              <p>Total Students</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Courses</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Total Sales</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Recent Orders</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            
+          </div>
+        </div>
+      </main>
+  </div>
+
+
+
+  <div id="teamMembersContent" style="display: none;">
+     <main>
+        <div class="head-title">
+          <div class="left">
+            <p id="usernameDisplay"></p>
+
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Our Team Members</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-calendar-check"></i>
+            <span class="text">
+              <h3>1020</h3>
+              <p>Total Teachers</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>2834</h3>
+              <p>Total Students</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Courses</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Total Sales</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Recent Orders</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            
+          </div>
+        </div>
+      </main>
+  </div>
+
+
+
+<div id="settingsContent" style="display: none;">
+   <main>
+        <div class="head-title">
+          <div class="left">
+            <p id="usernameDisplay"></p>
+
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+       
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+           <div id="settingsContent">
+  <h1>Settings</h1>
+  <p>Welcome to the settings page. Here you can customize your e-learning experience according to your preferences. Adjust settings such as language, notification preferences, and profile settings to tailor your experience to suit your needs.</p>
+  <br>
+  <br>
+  <ul>
+    <li><strong>Language Preferences:</strong> Choose your preferred language for the interface and course content.</li><br>
+    <li><strong>Notification Settings:</strong> Manage your notification preferences for updates, reminders, and announcements.</li><br>
+    <li><strong>Profile Settings:</strong> Update your profile information, including your name, email, password, and profile picture.</li><br>
+    <li><strong>Privacy Settings:</strong> Control who can view your profile and access your course progress.</li><br>
+    <li><strong>Accessibility Options:</strong> Adjust settings for font size, color contrast, and screen reader compatibility.</li><br>
+    <li><strong>Course Preferences:</strong> Customize your course dashboard, including layout, sorting options, and featured courses.</li><br>
+    <li><strong>Email Preferences:</strong> Opt-in or opt-out of promotional emails, newsletters, and special offers.</li><br>
+  </ul>
+  <p>Explore these settings to personalize your e-learning journey and make the most out of your learning experience!</p>
+</div>
+
+      
+            </div>
+            
+          </div>
+        </div>
+      </main>
+</div>
+
+
+</section>
+
+
+<script>
+  // Function to show content based on the clicked sidebar link
+  function showContent(contentId) {
+    // Hide all content containers
+    const contentContainers = document.querySelectorAll('#mainContent > div');
+    contentContainers.forEach(container => {
+      container.style.display = 'none';
+    });
+
+    // Show the selected content container
+    const selectedContent = document.getElementById(contentId);
+    if (selectedContent) {
+      selectedContent.style.display = 'block';
+    }
+  }
+</script>
+
+    <script src="./asset/app.js"></script>
+   <script>
+  // Retrieve user details from session storage
+  const username = sessionStorage.getItem("username");
+  const email = sessionStorage.getItem("email");
+  const image = sessionStorage.getItem("image");
+  const password = sessionStorage.getItem("password");
+
+  // Update HTML elements with the user details
+  document.getElementById("usernameDisplay").textContent = username;
+  // Update other HTML elements with other user details as needed
+
+  // Logout Function
+  document.querySelector(".logout-link").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+
+    // Display a confirmation dialog
+    var confirmed = confirm("Are you sure you want to log out?");
+
+    if (confirmed) {
+      // Remove all user session data
+      sessionStorage.removeItem("username");
+      sessionStorage.removeItem("email");
+      sessionStorage.removeItem("image");
+      sessionStorage.removeItem("password");
+
+      // Redirect to the logout page
+      window.location.href = "../index.html";
+    }
+  });
+</script>
+
+ <!-- // All student fetch -->
+
+ 
+ <!-- Firebase SDK -->
+<script type="module">
+  // Import the necessary functions from Firebase SDK
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getDatabase, ref, get, remove } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+
+    // Firebase configuration
+      const firebaseConfig = {
+    apiKey: "AIzaSyDOSSP__wEeHPdxAlNg4JMfiWT4N9svvAY",
+    authDomain: "elearning-2a07a.firebaseapp.com",
+    projectId: "elearning-2a07a",
+    storageBucket: "elearning-2a07a.appspot.com",
+    messagingSenderId: "749083175488",
+    appId: "1:749083175488:web:b8327dbf98205943498da5",
+    measurementId: "G-ZHNB41847M"
+  };
+  
+   // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  // Function to fetch users
+  function fetchUsers() {
+    // Get a reference to the "users" node in the database
+    const usersRef = ref(db, 'users');
+
+    // Fetch all users
+    get(usersRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const users = snapshot.val();
+          console.log('All users:', users);
+          displayUsers(users);
+        } else {
+          console.log('No users found.');
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching users:', error);
+      });
+  }
+
+  // Function to display users in a table
+  function displayUsers(users) {
+    const userTableBody = document.getElementById('userTableBody');
+
+    // Clear existing table rows
+    userTableBody.innerHTML = '';
+
+    // Initialize row number counter
+    let rowNum = 1;
+
+    // Iterate over each user and create a table row
+    for (const userId in users) {
+      const userData = users[userId];
+      const row = `
+        <tr>
+          <td>${rowNum}</td>
+          <td>${userData.username}</td>
+          <td>${userData.email}</td>
+          <td>${userData.password}</td>
+        </tr>
+      `;
+      userTableBody.innerHTML += row;
+
+      // Increment row number counter
+      rowNum++;
+    }
+  }
+
+ 
+
+  // Call the function to fetch users when the page loads
+  window.onload = function() {
+    fetchUsers();
+  };
+  </script>
+
+  </body>
+</html>
